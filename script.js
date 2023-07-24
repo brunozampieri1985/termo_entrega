@@ -289,7 +289,7 @@ btnGerar.addEventListener("click", async () => {
   body.innerHTML = html;
   const section = qs("section");
   setTimeout(() => {
-    //savePDF(term.nome, section);
+    savePDF(term.nome, section);
     const btnVoltar = createEl("button");
     btnVoltar.textContent = "Voltar";
     btnVoltar.addEventListener("click", () => {
