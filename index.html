@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <h2>Gerador de Termo de Entrega</h2>
+    <div id="erro"></div>
+    <div class="form">
+      <div class="form-group">
+        <div class="form-input-100">
+          <label for="nome">Loja</label>
+          <select id="loja">
+            <option value="carrao">Carrão</option>
+            <option value="perdizes">Perdizes</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-input-100">
+
+          <label for="nome">Nome do Cliente</label>
+          <input type="text" name="nome" id="nome">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-input">
+          <label for="rg">RG</label>
+          <input type="text" name="rg" id="rg">
+        </div>
+        <div class="form-input">
+          <label for="cpf">CPF</label>
+          <input type="text" name="cpf" id="cpf">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-input-100">
+          <label for="contrato">Nº Contrato</label>
+          <input type="text" name="contrato" id="contrato">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-input-100">
+          <label for="assinatura">Data assinatura</label>
+          <input type="date" name="assinatura" id="assinatura">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-input-50">
+          <label for="prazo">Prazo de Entrega (úteis)</label>
+          <input type="number" name="prazo" id="prazo">
+        </div>
+
+        <div class="form-input-50">
+          <label for="entrega">Data de Entrega</label>
+          <input type="date" name="entrega" id="entrega" disabled>
+        </div>
+      </div>
+
+      <div class="radio-group">
+        <p>Planta Hidraulica:</p>
+        <input type="radio" id="hidraulica_sim" name="hidraulica" value="Sim">
+        <label for="hidraulica_sim">Entregue</label>
+        <input type="radio" id="hidraulica_nao" name="hidraulica" value="Não">
+        <label for="hidraulica_nao">Não Entregue</label><br>
+      </div>
+
+
+
+      <div class="radio-group">
+        <p>Planta Elétrica:</p>
+        <input type="radio" id="eletrica_sim" name="eletrica" value="Sim">
+        <label for="eletrica_sim">Entregue</label>
+        <input type="radio" id="eletrica_nao" name="eletrica" value="Não">
+        <label for="eletrica_nao">Não Entregue</label><br>
+
+      </div>
+      <br>
+      <button id="btnGerar">Gerar Termo</button>
+
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.9/dayjs.min.js" integrity="sha512-q4Xn+ZU2K+dqJPL8a3TiyGsDa31IkR/rLt/w+fy8jLrx8TdXj0dLM1Aq4aPXnOOKxHEya/bD9DePDB2DHm4jJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

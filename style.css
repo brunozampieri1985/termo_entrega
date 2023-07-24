@@ -1,0 +1,164 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  max-width: 380px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.form input {
+  height: 36px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+.form select {
+  height: 36px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #107ba9;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#errors {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  padding: 40px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.plantas {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group {
+  display: flex;
+  width: 100%;
+  align-items: center;  
+}
+
+.form-group {
+  display: flex;
+  width: 100%;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 43%;
+  padding: 10px;
+}
+
+.form-input-100 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+button {
+  background-color: #107ba9;
+  color: #fff;
+  height: 36px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1086b8;
+}
+
+.pdf {
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.pdf p {
+  line-height: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.pdf h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #107ba9;
+}
+.pdf ul li {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.empresa {
+  background-color: #107ba9;
+  color: white;
+  padding: 40px;
+}
+
+.dados {
+  color: #107ba9;
+  padding-left: 40px;
+}
+
+.conteudo {
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.assinatura {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  margin-top: 50px;
+}
+
+.assinatura__espaco {
+  width: 50%;
+  display: flex;
+  height: 1px;
+  background-color: black;
+}
